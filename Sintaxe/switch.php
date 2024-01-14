@@ -1,30 +1,31 @@
 <?php
 $dia = 5;
+$msg = "";  
 
 switch ($dia) {
     case '1':
-        echo "Segunda-feira";
+        $msg = "Segunda-feira";
         break;
     case '2':
-        echo "Terça-feira";
+        $msg = "Terça-feira";
         break;
     case '3':
-        echo "Quarta-feira";
+        $msg = "Quarta-feira";
         break;
     case '4':
-        echo "Quinta-feira";
+        $msg = "Quinta-feira";
         break;
     case '5':
-        echo "Sexta-feira";
+        $msg = "Sexta-feira";
         break;
     case '6':
-        echo "Sábado";
+        $msg = "Sábado";
         break;
     case '7':
-        echo "Domingo";
+        $msg = "Domingo";
         break;
     default:
-        echo "Dia inválido";
+        $msg = "Dia inválido";
         break;  
 }
 ?>
@@ -36,6 +37,6 @@ switch ($dia) {
     <title>Document</title>
 </head>
 <body>
-    <p>Olá, hoje é <?=$dia;?> </p>
+    <p>Olá, hoje é <?=$msg;?> </p>
 </body>
 </html>
